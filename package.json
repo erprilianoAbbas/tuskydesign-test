@@ -6,14 +6,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "graph": "nx graph"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.10",
     "tslib": "^2.8.0",
     "typescript": "~5.5.2",
     "nx": "20.4.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
 }
