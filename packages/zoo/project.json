@@ -12,6 +12,23 @@
         "jestConfig": "packages/zoo/jest.config.ts",
         "runInBand": true
       }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "dependsOn": ["@tuskdesign/animals:build", "@tuskdesign/names:build"],
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/packages/zoo"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
     }
   }
 }

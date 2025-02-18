@@ -5,12 +5,11 @@
     "rootDir": ".",
     "jsx": "react-jsx",
     "allowJs": true,
-    "outDir": "dist",
+    "outDir": "../../dist/packages/names",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
     "declaration": true,
-    "types": ["node", "jest"],
-    "moduleResolution": "nodenext"
+    "types": ["node", "jest", "vite/client"]
   },
   "include": ["**/*.ts"],
   "references": [],

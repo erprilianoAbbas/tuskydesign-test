@@ -5,12 +5,11 @@
     "rootDir": ".",
     "jsx": "react-jsx",
     "allowJs": true,
-    "outDir": "dist",
+    "outDir": "../../dist/packages/zoo",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
-    "types": ["node", "jest"],
-    "declaration": true,
-    "moduleResolution": "nodenext"
+    "types": ["node", "jest", "vite/client"],
+    "declaration": true
   },
   "include": ["**/*.ts"],
   "references": [

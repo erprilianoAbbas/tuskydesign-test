@@ -14,8 +14,8 @@
     "incremental": true,
     "isolatedModules": true,
     "lib": ["es2022"],
-    "module": "NodeNext",
-    "moduleResolution": "node",
+    "module": "ES6",
+    "moduleResolution": "bundler",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -28,7 +28,7 @@
     "skipLibCheck": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es2022",
+    "target": "ES6",
     "types": ["jest"],
   }
 }
