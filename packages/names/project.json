@@ -1,0 +1,17 @@
+{
+  "name": "names",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/names",
+  "projectType": "library",
+  "tags": ["scope:names"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/names/jest.config.ts",
+        "runInBand": true
+      }
+    }
+  }
+}

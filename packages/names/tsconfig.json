@@ -1,9 +1,21 @@
 {
+  "compilerOptions": {
+    "declaration": true,
+    "module": "ES6",
+    "target": "ES6",
+    "strict": true,
+    "composite": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true
+  },
   "extends": "../../tsconfig.base.json",
   "include": [],
   "references": [
     {
       "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
     }
   ]
 }

@@ -8,21 +8,18 @@
     "outDir": "dist",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "emitDeclarationOnly": false,
-    "types": [
-      "node"
-    ],
-    "declaration": true
+    "types": ["node", "jest"],
+    "declaration": true,
+    "moduleResolution": "nodenext"
   },
-  "include": [
-    "**/*.ts"
-  ],
+  "include": ["**/*.ts"],
   "references": [
     {
       "path": "../animals/tsconfig.lib.json"
     },
     {
       "path": "../names/tsconfig.lib.json"
-    },
+    }
   ],
   "exclude": [
     "dist",
@@ -33,6 +30,7 @@
     "src/**/*.test.js",
     "src/**/*.spec.js",
     "src/**/*.test.jsx",
-    "src/**/*.spec.jsx"
+    "src/**/*.spec.jsx",
+    "jest.config.ts"
   ]
 }

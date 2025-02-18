@@ -3,7 +3,7 @@ build/
 out/
 dist/
 tsconfig.tsbuildinfo
-
+coverage/
 
 
 .nx/cache

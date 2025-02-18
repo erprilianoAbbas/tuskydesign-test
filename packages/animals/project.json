@@ -1,0 +1,17 @@
+{
+  "name": "animals",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/animals",
+  "projectType": "library",
+  "tags": ["scope:animals"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/animals/jest.config.ts",
+        "runInBand": true
+      }
+    }
+  }
+}
