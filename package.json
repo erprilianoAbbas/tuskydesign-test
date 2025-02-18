@@ -1,5 +1,9 @@
 {
   "name": "@tuskdesign/source",
+  "engines": {
+    "node": "18.20.4",
+    "pnpm": "8.15.7"
+  },
   "workspaces": [
     "packages/*"
   ],
