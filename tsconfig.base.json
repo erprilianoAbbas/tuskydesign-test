@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
@@ -15,7 +16,7 @@
     "isolatedModules": true,
     "lib": ["es2022"],
     "module": "ES6",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -30,5 +31,9 @@
     "strict": true,
     "target": "ES6",
     "types": ["jest"],
+    "paths": {
+      "@tuskdesign/animals": ["packages/animals/index.ts"],
+      "@tuskdesign/names": ["packages/names/index.ts"]
+    }
   }
 }
